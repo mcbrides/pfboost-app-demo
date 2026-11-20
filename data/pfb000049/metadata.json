@@ -1,0 +1,63 @@
+{
+  "schema_version": "1.0",
+  "dataset_id": "pfb000049",
+  "entry_id": "pfb000049",
+  "protein_id": "Human SNU13",
+  "protein_name": "Human SNU13 / 15.5K protein",
+  "PMID": "18044964",
+  "DOI": "10.1021/bi701254q",
+  "uniprot_accession": "P55769",
+  "construct": "144-aa core",
+  "entity_id": "1",
+  "state": "free monomer, no RNA bound",
+  "binding_state": "APO",
+  "assembly": "MONOMER",
+  "construct_source_label": "15.5K",
+  "sequence": "MGHHHHHHSSGIEEGRMTEADVNPKAYPLADAHLTKKLLDLVQQSCNYKQLRKGANEATKTLNRGISEFIVMAADAEPLEIILHLPLLCEDKNVPYVFVRSKQALGRACGVSRPVIACSVTIKEGSQLKQQIQSIQQSIERLLV",
+  "state_source_label": "free monomer, no RNA bound",
+  "method_id": "pfnet_hdxrate_0.2.3_poly_HD_v1",
+  "target_status": "provisional_conditions",
+  "experimental_method": "HX/NMR",
+  "source_datasets": {
+    "rates": "BMRB15445_rate_1",
+    "published_pf": "BMRB15445_pf_1"
+  },
+  "conditions": {
+    "temperature_K": 293.0,
+    "pH_input": 6.12,
+    "reported_pH_label": "pD6.52",
+    "input_convention": "uncorrected_glass_electrode_reading",
+    "convention_status": "assumed_for_standardization",
+    "assumption_note": "Retain auditedpD6.52 interpretation ascorrectedlabel; effectiveinput6.12 yieldsfinalcalculatorpD6.52 atnominal100%D2O. This is notverifiedoriginalelectrode reading. Nominal1.0 solvent usesapprovedcollectionD2O-equilibrateddesalting-column policy.",
+    "buffer": "100mMNaCl,100mMsodiumphosphate;freeprotein, noRNA/denaturant.",
+    "d2o_fraction": 1.0
+  },
+  "state_assignment": {},
+  "checks": {
+    "quantitative_residues": 61,
+    "construct_residues": 144
+  },
+  "method": {
+    "method_id": "pfnet_hdxrate_0.2.3_poly_HD_v1",
+    "package": "hdxrate",
+    "package_version": "0.2.3",
+    "reference": "poly",
+    "exchange_type": "HD",
+    "ph_correction": true,
+    "d_percentage": 100.0,
+    "rate_output_units": "s-1",
+    "pD_used": 6.5200000000000005,
+    "PF_formula": "kint_standard_s_inv / kex_s_inv",
+    "dG_formula": "R * temperature_K * ln(PF) / 1000",
+    "R_J_mol_K": 8.31446261815324,
+    "dG_interpretation": "HX opening/protection free energy under EX2 interpretation; not global unfolding free energy"
+  },
+  "experimental_details": {},
+  "structure": {
+    "pdb_id": "2JNB",
+    "origin": "experimental_solution_NMR",
+    "selected_model": 1,
+    "coordinate_file": "structure.pdb",
+    "coordinate_sha256": "f71c0be603555265be755be564cbe56cf842b1f5fd3aef6b47dec555bf6ae5f2"
+  }
+}

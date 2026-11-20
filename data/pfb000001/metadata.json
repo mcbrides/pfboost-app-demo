@@ -1,0 +1,78 @@
+{
+  "schema_version": "1.0",
+  "dataset_id": "pfb000001",
+  "entry_id": "pfb000001",
+  "protein_id": "SAMP1",
+  "protein_name": "Small archaeal modifier protein 1",
+  "PMID": "21112336",
+  "DOI": "10.1016/j.jmb.2010.11.040",
+  "uniprot_accession": "Q8TIQ6",
+  "construct": "N-terminal GH",
+  "entity_id": "1",
+  "state": "APO",
+  "binding_state": "APO",
+  "construct_source_label": "Small archaeal modifier protein 1 from Methanosarcina acetivorans",
+  "sequence_modifications": [
+    {
+      "type": "expression_tag",
+      "construct_positions": [
+        1,
+        2
+      ],
+      "sequence": "GH",
+      "evidence": "PDB 2L52 SEQADV records"
+    }
+  ],
+  "sequence": "GHMAEVKVKLFANLREAAGTPELPLSGEKVIDVLLSLTDKYPALKYVIFEKGDEKSEILILCGSINILINGNNIRHLEGLETLLKDSDEIGILPPVSGG",
+  "state_source_label": "APO",
+  "method_id": "pfnet_hdxrate_0.2.3_poly_HD_v1",
+  "target_status": "provisional_conditions",
+  "published_kint_unit_evidence": "s-1 inferred from deposited kint/kex reproducing PF across 41 sites. The HX rate saveframe explicitly labels kex s-1; the PF saveframe has no separate intrinsic-rate unit tag.",
+  "experimental_method": "HX/NMR",
+  "source_datasets": {
+    "rates": "BMRB17263_rate_1",
+    "published_pf": "BMRB17263_pf_1"
+  },
+  "conditions": {
+    "temperature_K": 298.15,
+    "pH_input": 6.8,
+    "reported_pH_label": "pH 6.8",
+    "input_convention": "uncorrected_glass_electrode_reading",
+    "convention_status": "assumed_for_standardization",
+    "assumption_note": "Use reported 6.8 as PFNet's uncorrected meter input with correction enabled, as selected and accepted in this discussion. Paper gives the storage buffer pH before lyophilization and does not explicitly confirm a post-reconstitution electrode reading or corrected pD. Do not treat this convention as source-confirmed or infer it by matching published kint.",
+    "buffer": "20 mM sodium phosphate; 150 mM NaCl; 0.1 mM EDTA",
+    "d2o_fraction": 1.0,
+    "denaturant": null
+  },
+  "state_assignment": {
+    "note": "The database assumes apo for display because the source does not record a binding state."
+  },
+  "checks": {
+    "quantitative_residues": 41,
+    "construct_residues": 99
+  },
+  "method": {
+    "method_id": "pfnet_hdxrate_0.2.3_poly_HD_v1",
+    "package": "hdxrate",
+    "package_version": "0.2.3",
+    "reference": "poly",
+    "exchange_type": "HD",
+    "ph_correction": true,
+    "d_percentage": 100.0,
+    "rate_output_units": "s-1",
+    "pD_used": 7.2,
+    "PF_formula": "kint_standard_s_inv / kex_s_inv",
+    "dG_formula": "R * temperature_K * ln(PF) / 1000",
+    "R_J_mol_K": 8.31446261815324,
+    "dG_interpretation": "HX opening/protection free energy under EX2 interpretation; not global unfolding free energy"
+  },
+  "experimental_details": {},
+  "structure": {
+    "pdb_id": "2L52",
+    "origin": "experimental_solution_NMR",
+    "selected_model": 1,
+    "available_models": 20,
+    "coordinate_file": "structure.pdb",
+    "coordinate_sha256": "96acfef76156fdc963fcbff9b36c2c624335f5ae30503c8bb04bb5c0a3c28dbb"
+  }
+}

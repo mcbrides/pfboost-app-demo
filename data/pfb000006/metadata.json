@@ -1,0 +1,64 @@
+{
+  "schema_version": "1.0",
+  "dataset_id": "pfb000006",
+  "entry_id": "pfb000006",
+  "protein_id": "Galectin-8",
+  "protein_name": "Human galectin-8",
+  "PMID": "28813004",
+  "DOI": "10.3390/molecules22081357",
+  "uniprot_accession": "O00214",
+  "construct": "CTD (N-terminal Met)",
+  "entity_id": "1",
+  "state": "LACTOSE",
+  "binding_state": "LACTOSE",
+  "construct_source_label": "galectin-8_CTD",
+  "sequence": "MRLPFAARLNTPMGPGRTVVVKGEVNANAKSFNVDLLAGKSKDIALHLNPRLNIKAFVRNSFLQESWGEEERNITSFPFSPGMYFEMIIYCDVREFKVAVNGVHSLEYKHRFKELSSIDTLEINGDIHLLEVRSW",
+  "sequence_definition": "Full135-residue BMRB deposited experimental core; omitted expression tags under approved policy. No invented tag residues or trimming to coordinate coverage.",
+  "construct_qualification": "The deposited 135-residue C-terminal domain is used for the intrinsic-rate calculation. Experimental 3VKL contains the N- and C-terminal domains joined by a shortened linker. The selected coordinates retain C-terminal domain A184–317 and its lactose in chain D. The reference lacks NMR Met1.",
+  "state_source_label": "lactose-bound",
+  "method_id": "pfnet_hdxrate_0.2.3_poly_HD_v1",
+  "target_status": "provisional_conditions",
+  "experimental_method": "HX/NMR",
+  "source_datasets": {
+    "rates": "BMRB27258_rate_2"
+  },
+  "conditions": {
+    "temperature_K": 310,
+    "pH_input": 7.4,
+    "reported_pH_label": "PBS pH 7.4 before lyophilization",
+    "input_convention": "uncorrected_glass_electrode_reading",
+    "convention_status": "assumed_for_standardization",
+    "assumption_note": "The reported buffer pH before lyophilization is the uncorrected PF input unless an explicit pD or conflicting conditions override it. No explicit corrected pD or measured post-reconstitution pH was found.",
+    "buffer": "PBS: 10 mM Na2HPO4 (pH 7.4), 137 mM NaCl, 1.8 mM KH2PO4, 2.7 mM KCl",
+    "d2o_fraction": 0.999,
+    "denaturant": null
+  },
+  "state_assignment": {},
+  "checks": {
+    "quantitative_residues": 48,
+    "construct_residues": 135
+  },
+  "method": {
+    "method_id": "pfnet_hdxrate_0.2.3_poly_HD_v1",
+    "package": "hdxrate",
+    "package_version": "0.2.3",
+    "reference": "poly",
+    "exchange_type": "HD",
+    "ph_correction": true,
+    "d_percentage": 99.9,
+    "rate_output_units": "s-1",
+    "pD_used": 7.799600000000001,
+    "PF_formula": "kint_standard_s_inv / kex_s_inv",
+    "dG_formula": "R * temperature_K * ln(PF) / 1000",
+    "R_J_mol_K": 8.31446261815324,
+    "dG_interpretation": "HX opening/protection free energy under EX2 interpretation; not global unfolding free energy"
+  },
+  "experimental_details": {},
+  "structure": {
+    "pdb_id": "3VKL",
+    "origin": "experimental_X_ray",
+    "selected_model": 1,
+    "coordinate_file": "structure.pdb",
+    "coordinate_sha256": "9ab1d33ac9bac22dd9e1679e46b8fb0bc15cc1f252aa0966d2b432a3b0769b7b"
+  }
+}

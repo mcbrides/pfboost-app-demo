@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "dataset_id": "pfb000057",
+  "entry_id": "pfb000057",
+  "protein_id": "Mouse PTP-BL",
+  "protein_name": "Mouse PTP-BL",
+  "PMID": "14725761",
+  "DOI": "10.1016/j.str.2003.11.023",
+  "construct": "PDZ2as",
+  "entity_id": "1",
+  "state": "native unliganded PDZ2as",
+  "binding_state": "APO",
+  "conformation": "NATIVE",
+  "construct_source_label": "Second PDZ Domain from PTP-BL",
+  "sequence": "KPGDTFEVELAKTDGSLGISVTVLFDKGGVNTSVRHGGIYVKAIIPKGAAESDGRIHKGDRVLAVNGVSLEGATHKQAVETLRNTGQVVHLLLEKGQVP",
+  "state_source_label": "native unliganded PDZ2as",
+  "method_id": "published_pf_bai1993_nguyen2018_poly_v1",
+  "target_status": "provisional_historical_model",
+  "experimental_method": "HX/NMR",
+  "source_datasets": {
+    "published_pf": "BMRB5762_pf_1"
+  },
+  "conditions": {
+    "temperature_K": 281.5,
+    "pH_input": 3.5,
+    "input_convention": "uncorrected_glass_electrode_reading",
+    "convention_status": "assumed_for_standardization",
+    "assumption_note": "ReportedexchangepH3.5 unchanged under collectionpolicy; nominal100%D2O approved for storedlyophilizedprotein dissolved solely inD2Obuffer.",
+    "buffer": "50mMacetate;50mMKCl",
+    "d2o_fraction": 1.0,
+    "denaturant": null
+  },
+  "state_assignment": {},
+  "checks": {
+    "quantitative_residues": 55,
+    "construct_residues": 99
+  },
+  "method": {
+    "method_id": "published_pf_bai1993_nguyen2018_poly_v1",
+    "exchange_type": "HD",
+    "PF_formula": "kint_updated/kex_reconstructed"
+  },
+  "experimental_details": {},
+  "structure": {
+    "pdb_id": "1OZI",
+    "origin": "experimental_solution_NMR",
+    "selected_model": 1,
+    "coordinate_file": "structure.pdb",
+    "coordinate_sha256": "652f774e04a66aacb206b9fed5351c15b85697b6d509a3d4818916ffb0d479ed"
+  }
+}

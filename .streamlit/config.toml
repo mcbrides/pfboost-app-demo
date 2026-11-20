@@ -1,0 +1,17 @@
+[theme]
+primaryColor = "#327ba8"
+backgroundColor = "#ffffff"
+secondaryBackgroundColor = "#f1f6fa"
+textColor = "#202f3b"
+font = "sans serif"
+
+[browser]
+gatherUsageStats = false
+
+[server]
+headless = true
+fileWatcherType = "none"
+
+# Origins used by the browser-local theme switch.
+[client]
+allowedOrigins = ["https://*.streamlit.app", "https://share.streamlit.io", "http://localhost:*", "http://127.0.0.1:*"]

@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.0",
+  "dataset_id": "pfb000047",
+  "entry_id": "pfb000047",
+  "protein_id": "Staphylococcal nuclease",
+  "protein_name": "Staphylococcus aureus nuclease",
+  "PMID": "8218167",
+  "DOI": "10.1021/bi00092a011",
+  "uniprot_accession": "P00644",
+  "construct": "H124L",
+  "entity_id": "1",
+  "state": "unligated",
+  "binding_state": "APO",
+  "sequence": "ATSTKKLHKEPATLIKAIDGDTVKLMYKGQPMTFRLLLVDTPETKHPKKGVEKYGPEASAFTKKMVENAKKIEVEFDKGQRTDKYGRGLAYIYADGKMVNEALVRQGLAKVAYVYKPNNTHEQLLRKSEAQAKKEKLNIWSEDNADSGQ",
+  "state_source_label": "unligated",
+  "method_id": "pfnet_hdxrate_0.2.3_poly_HD_v1",
+  "target_status": "source_conditions_verified",
+  "experimental_method": "HX/NMR",
+  "source_datasets": {
+    "rates": "BMRB17718_rate_2",
+    "published_pf": "BMRB17718_rate_2"
+  },
+  "conditions": {
+    "temperature_K": 310.15,
+    "pH_input": 5.5,
+    "input_convention": "uncorrected_glass_electrode_reading",
+    "convention_status": "source_explicit",
+    "d2o_fraction": 1.0
+  },
+  "state_assignment": {},
+  "checks": {
+    "quantitative_residues": 49,
+    "construct_residues": 149
+  },
+  "method": {
+    "method_id": "pfnet_hdxrate_0.2.3_poly_HD_v1",
+    "package": "hdxrate",
+    "package_version": "0.2.3",
+    "reference": "poly",
+    "exchange_type": "HD",
+    "ph_correction": true,
+    "d_percentage": 100.0,
+    "rate_output_units": "s-1",
+    "pD_used": 5.9,
+    "PF_formula": "kint_standard_s_inv / kex_s_inv",
+    "dG_formula": "R * temperature_K * ln(PF) / 1000",
+    "R_J_mol_K": 8.31446261815324,
+    "dG_interpretation": "HX opening/protection free energy under EX2 interpretation; not global unfolding free energy"
+  },
+  "experimental_details": {},
+  "structure": {
+    "pdb_id": "1STN",
+    "origin": "locally_prepared",
+    "status": "ready",
+    "selected_model": 1,
+    "baseline_reference": {
+      "pdb_id": "1STN",
+      "origin": "experimental_X_ray",
+      "required_mutations": [
+        {
+          "label": "H124L",
+          "sequence_index": 124,
+          "from_residue": "H",
+          "to_residue": "L",
+          "pdb_chain": "A",
+          "pdb_residue_number": 124
+        }
+      ]
+    }
+  }
+}

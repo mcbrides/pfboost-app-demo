@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0",
+  "dataset_id": "pfb000052",
+  "entry_id": "pfb000052",
+  "protein_id": "E. coli adenylate kinase",
+  "protein_name": "Escherichia coli adenylate kinase",
+  "PMID": "22963267",
+  "DOI": "10.1021/ja3032482",
+  "uniprot_accession": "P69441",
+  "construct": "WT",
+  "entity_id": "1",
+  "state": "Ap5A-bound closed complex",
+  "binding_state": "AP5A",
+  "construct_source_label": "wild-type adenylate kinase",
+  "sequence": "MRIILLGAPGAGKGTQAQFIMEKYGIPQISTGDMLRAAVKSGSELGKQAKDIMDAGKLVTDELVIALVKERIAQEDCRNGFLLDGFPRTIPQADAMKEAGINVDYVLEFDVPDELIVDRIVGRRVHAPSGRVYHVKFNPPKVEGKDDVTGEELTTRKDDQEETVRKRLVEYHQMTAPLIGYYSKEAEAGNTKYAKVDGTKPVAEVRADLEKILG",
+  "state_source_label": "Ap5A-bound closed complex",
+  "method_id": "pfnet_hdxrate_0.2.3_poly_HD_v1",
+  "target_status": "provisional_conditions",
+  "experimental_method": "HX/NMR",
+  "source_datasets": {
+    "rates": "BMRB18685_rate_1"
+  },
+  "conditions": {
+    "temperature_K": 273.0,
+    "pH_input": 6.4,
+    "input_convention": "uncorrected_glass_electrode_reading",
+    "convention_status": "assumed_for_standardization",
+    "assumption_note": "The calculation uses the HX-specific BMRB conditions of 273 K, pH 6.4, and 100% D₂O. The electrode convention is unspecified. The paper also gives general conditions of 25 °C and pH 7.0.",
+    "d2o_fraction": 1.0,
+    "denaturant": null
+  },
+  "state_assignment": {},
+  "checks": {
+    "quantitative_residues": 1,
+    "construct_residues": 214
+  },
+  "method": {
+    "method_id": "pfnet_hdxrate_0.2.3_poly_HD_v1",
+    "package": "hdxrate",
+    "package_version": "0.2.3",
+    "reference": "poly",
+    "exchange_type": "HD",
+    "ph_correction": true,
+    "d_percentage": 100.0,
+    "rate_output_units": "s-1",
+    "pD_used": 6.800000000000001,
+    "PF_formula": "kint_standard_s_inv / kex_s_inv",
+    "dG_formula": "R * temperature_K * ln(PF) / 1000",
+    "R_J_mol_K": 8.31446261815324,
+    "dG_interpretation": "HX opening/protection free energy under EX2 interpretation; not global unfolding free energy"
+  },
+  "experimental_details": {},
+  "structure": {
+    "pdb_id": "1AKE",
+    "origin": "experimental_X_ray",
+    "selected_model": 1,
+    "coordinate_file": "structure.pdb",
+    "coordinate_sha256": "4eb75357eb1ab662f47eddc3f28f069309b772e17906c34c0dad0dbb819daa75"
+  }
+}

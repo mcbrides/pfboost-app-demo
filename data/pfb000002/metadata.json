@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0",
+  "dataset_id": "pfb000002",
+  "entry_id": "pfb000002",
+  "protein_id": "PMF-G",
+  "protein_name": "Plethodon shermani modulating factor isoform G",
+  "PMID": "24849290",
+  "DOI": "10.1371/journal.pone.0096975",
+  "uniprot_accession": "Q0GB44",
+  "construct": "WT (57-aa core)",
+  "entity_id": "1",
+  "state": "native oxidized disulfide-bonded recombinant monomer",
+  "conformation": "NATIVE",
+  "redox_state": "OXIDIZED",
+  "assembly": "MONOMER",
+  "construct_source_label": "rPMF-G",
+  "sequence": "LQCNTLDGGTEECIPGIYNVCVHYKSEDEEYKSCGIQEECEDAEGATVLCCPEDLCN",
+  "state_source_label": "native oxidized disulfide-bonded recombinant monomer",
+  "method_id": "pfnet_hdxrate_0.2.3_poly_HD_v1",
+  "target_status": "provisional_conditions",
+  "experimental_method": "HX/NMR",
+  "source_datasets": {
+    "rates": "BMRB19660_rate_1"
+  },
+  "conditions": {
+    "temperature_K": 293.15,
+    "pH_input": 7.0,
+    "reported_pH_label": "pH 7 before lyophilization/reconstitution",
+    "input_convention": "uncorrected_glass_electrode_reading",
+    "convention_status": "assumed_for_standardization",
+    "assumption_note": "The reported pre-lyophilization buffer pH is used as the uncorrected PF input unless an explicit pD or conflicting conditions override it. The calculation for rPMF-G uses pH 7.0. The source gives neither a measured post-reconstitution electrode reading nor a corrected pD.",
+    "buffer": "50 mM KCl; 10 mM sodium phosphate",
+    "d2o_fraction": 0.9999,
+    "denaturant": null
+  },
+  "state_assignment": {},
+  "checks": {
+    "quantitative_residues": 16,
+    "construct_residues": 57
+  },
+  "method": {
+    "method_id": "pfnet_hdxrate_0.2.3_poly_HD_v1",
+    "package": "hdxrate",
+    "package_version": "0.2.3",
+    "reference": "poly",
+    "exchange_type": "HD",
+    "ph_correction": true,
+    "d_percentage": 99.99,
+    "rate_output_units": "s-1",
+    "pD_used": 7.39996,
+    "PF_formula": "kint_standard_s_inv / kex_s_inv",
+    "dG_formula": "R * temperature_K * ln(PF) / 1000",
+    "R_J_mol_K": 8.31446261815324,
+    "dG_interpretation": "HX opening/protection free energy under EX2 interpretation; not global unfolding free energy"
+  },
+  "experimental_details": {},
+  "structure": {
+    "pdb_id": "2MHY",
+    "origin": "experimental_solution_NMR",
+    "selected_model": 1,
+    "available_models": 20,
+    "coordinate_file": "structure.pdb",
+    "coordinate_sha256": "8f1c9f671c659157af6a428947f037a56478efe1bc408161b40d0d0d02478579"
+  }
+}

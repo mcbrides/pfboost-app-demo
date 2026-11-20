@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.0",
+  "dataset_id": "pfb000048",
+  "entry_id": "pfb000048",
+  "protein_id": "Human BNIP3",
+  "protein_name": "Human BNIP3",
+  "PMID": "17412696",
+  "DOI": "10.1074/jbc.M701745200",
+  "uniprot_accession": "Q12983",
+  "construct": "TM domain",
+  "entity_id": "1",
+  "state": "homodimer in DHPC/DMPC lipid bicelles",
+  "assembly": "DIMER",
+  "construct_source_label": "BNIP3 TM",
+  "sequence": "RNTSVMKKGGIFSAEFLKVFLPSLLLSHLLAIGLGIYIGRRLTTS",
+  "state_source_label": "homodimer in DHPC/DMPC lipid bicelles",
+  "method_id": "pfnet_hdxrate_0.2.3_poly_HD_v1",
+  "target_status": "provisional_conditions",
+  "experimental_method": "HX/NMR",
+  "source_datasets": {
+    "rates": "BMRB7288_rate_1"
+  },
+  "conditions": {
+    "temperature_K": 303.15,
+    "pH_input": 5.1,
+    "reported_pH_label": "BMRB5.10; paper generalbuffer5.0",
+    "input_convention": "uncorrected_glass_electrode_reading",
+    "convention_status": "assumed_for_standardization",
+    "assumption_note": "Retain previously audited depositionpH5.10 under collectionreportedpH policy; generalpaperbuffer5.0 remainsqualified, no inventedisotopeoffset or pHtuning.",
+    "buffer": "20mMdeuteratedsodiumacetate; EDTA/sodiumazide asprimarygeneralbuffer, exactHX finalconcentrations notindependently asserted.",
+    "d2o_fraction": 0.999,
+    "denaturant": null
+  },
+  "state_assignment": {},
+  "checks": {
+    "quantitative_residues": 14,
+    "construct_residues": 45
+  },
+  "method": {
+    "method_id": "pfnet_hdxrate_0.2.3_poly_HD_v1",
+    "package": "hdxrate",
+    "package_version": "0.2.3",
+    "reference": "poly",
+    "exchange_type": "HD",
+    "ph_correction": true,
+    "d_percentage": 99.9,
+    "rate_output_units": "s-1",
+    "pD_used": 5.4996,
+    "PF_formula": "kint_standard_s_inv / kex_s_inv",
+    "dG_formula": "R * temperature_K * ln(PF) / 1000",
+    "R_J_mol_K": 8.31446261815324,
+    "dG_interpretation": "HX opening/protection free energy under EX2 interpretation; not global unfolding free energy"
+  },
+  "experimental_details": {},
+  "structure": {
+    "pdb_id": "2J5D",
+    "origin": "experimental_solution_NMR",
+    "selected_model": 1,
+    "coordinate_file": "structure.pdb",
+    "coordinate_sha256": "1eb38ad94c9441bb2ef4777322861445eb4d6553f784aa64b9314d6bb6bb6f4d"
+  }
+}

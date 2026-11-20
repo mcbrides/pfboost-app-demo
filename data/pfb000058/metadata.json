@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "dataset_id": "pfb000058",
+  "entry_id": "pfb000058",
+  "protein_id": "T. reesei MBF1",
+  "protein_name": "Trichoderma reesei multiprotein bridging factor 1",
+  "PMID": "19137618",
+  "DOI": "10.1002/prot.22344",
+  "construct": "C-terminal domain",
+  "entity_id": "1",
+  "state": "unbound Ctd-TrMBF1",
+  "binding_state": "APO",
+  "construct_source_label": "MBF1",
+  "sequence": "GAMDPEFAGGTEGQRLTKVDRSDDIIKPKTVGKEVGKAIEQGRQKFEPTMTQAELGKEIGETAATVASYERGTATPDQNILSKMERVLNVKLRGANIGAPRLGPKKK",
+  "state_source_label": "unbound Ctd-TrMBF1",
+  "method_id": "published_pf_bai1993_nguyen2018_poly_v1",
+  "target_status": "provisional_historical_model",
+  "experimental_method": "HX/NMR",
+  "source_datasets": {
+    "published_pf": "BMRB15795_pf_1"
+  },
+  "conditions": {
+    "temperature_K": 283,
+    "pH_input": 7.07,
+    "input_convention": "uncorrected_glass_electrode_reading",
+    "convention_status": "source_explicit",
+    "assumption_note": "The calculation uses the source meter pH of 7.07 and assumes a D₂O fraction of 95% for this dataset. The actual exchange fraction and transfer protocol are unreported.",
+    "buffer": null,
+    "d2o_fraction": 0.95,
+    "denaturant": null
+  },
+  "state_assignment": {},
+  "checks": {
+    "quantitative_residues": 34,
+    "construct_residues": 107
+  },
+  "method": {
+    "method_id": "published_pf_bai1993_nguyen2018_poly_v1",
+    "exchange_type": "HD",
+    "PF_formula": "kint_updated/kex_reconstructed"
+  },
+  "experimental_details": {},
+  "structure": {
+    "pdb_id": "2JVL",
+    "origin": "experimental_solution_NMR",
+    "selected_model": 1,
+    "coordinate_file": "structure.pdb",
+    "coordinate_sha256": "9b1592de5fe43608978740c96b9acecb3610eda4d6a0ac9f95b4225924a4e461"
+  }
+}

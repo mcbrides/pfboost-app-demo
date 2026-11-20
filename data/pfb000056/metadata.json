@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0",
+  "dataset_id": "pfb000056",
+  "entry_id": "pfb000056",
+  "protein_id": "Streptococcal protein G",
+  "protein_name": "Streptococcal protein G",
+  "PMID": "18586670",
+  "DOI": "10.1093/protein/gzn035",
+  "construct": "B1 Δ1.5",
+  "entity_id": "1",
+  "state": "GB1 delta1.5 at2.2mM; weak monomer-dimer self-association",
+  "assembly": "MONOMER_DIMER_EQUILIBRIUM",
+  "construct_source_label": "delta1.5",
+  "sequence": "MTTFKLIINGKTLKGETTTEAVDAATAEKVLKQYINDNGIDGEWTYDDATKTWTVTE",
+  "state_notes": "Weak monomer-dimer self-association was reported at 2.2 mM.",
+  "state_source_label": "GB1 delta1.5 at2.2mM; weak monomer-dimer self-association",
+  "method_id": "published_pf_bai1993_nguyen2018_poly_v1",
+  "target_status": "provisional_historical_model",
+  "experimental_method": "HX/NMR",
+  "source_datasets": {
+    "published_pf": "BMRB15408_pf_1"
+  },
+  "conditions": {
+    "temperature_K": 298.15,
+    "pH_input": 6.3,
+    "input_convention": "uncorrected_glass_electrode_reading",
+    "convention_status": "assumed_for_standardization",
+    "assumption_note": "Use explicitly reported exchangepH*6.3 unchanged under approved reported-pH policy; source explicitly100%D2O.",
+    "buffer": "50mM sodium phosphate",
+    "d2o_fraction": 1.0,
+    "denaturant": null
+  },
+  "state_assignment": {},
+  "checks": {
+    "quantitative_residues": 26,
+    "construct_residues": 57
+  },
+  "method": {
+    "method_id": "published_pf_bai1993_nguyen2018_poly_v1",
+    "exchange_type": "HD",
+    "PF_formula": "kint_updated/kex_reconstructed"
+  },
+  "experimental_details": {},
+  "structure": {
+    "pdb_id": "1FCL",
+    "origin": "experimental_solution_NMR",
+    "status": "ready",
+    "selected_model": 1,
+    "coordinate_file": "structure.pdb",
+    "coordinate_sha256": "60c8423e31caa19836b5fecacd470f8025d437f0c0416192608716b0da695a98"
+  }
+}

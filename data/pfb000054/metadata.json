@@ -1,0 +1,63 @@
+{
+  "schema_version": "1.0",
+  "dataset_id": "pfb000054",
+  "entry_id": "pfb000054",
+  "protein_id": "Human DAXX",
+  "protein_name": "Human DAXX",
+  "PMID": "21134643",
+  "DOI": "10.1016/j.str.2010.09.016",
+  "uniprot_accession": "Q9UER7",
+  "construct": "DHB (55–144)",
+  "entity_id": "1",
+  "state": "unbound native DAXX55-144 monomer",
+  "binding_state": "APO",
+  "assembly": "MONOMER",
+  "construct_source_label": "DAXX",
+  "sequence": "GSHMGKKCYKLENEKLFEEFLELCKMQTADHPEVVPFLYNRQQRAHSLFLASAEFCNILSRVLSRARSRPAKLYVYINELCTVLKAHSAKKKLN",
+  "state_source_label": "unbound native DAXX55-144 monomer",
+  "method_id": "pfnet_hdxrate_0.2.3_poly_HD_v1",
+  "target_status": "provisional_conditions",
+  "experimental_method": "HX/NMR",
+  "source_datasets": {
+    "rates": "BMRB17018_rate_1"
+  },
+  "conditions": {
+    "temperature_K": 298.0,
+    "pH_input": 6.5,
+    "reported_pH_label": "uncorrected pH6.5",
+    "input_convention": "uncorrected_glass_electrode_reading",
+    "convention_status": "assumed_for_standardization",
+    "assumption_note": "Exchange pH is explicitly uncorrected in primary Figure3B. Exact final D2O fraction is unreported; use collection-approved nominal100% for lyophilized protein redissolved solely in D2O. Temperature298K is explicitly stated in the HX STAR details; primary25C is consistent with rounded Kelvin reporting.",
+    "buffer": "100mM KCl,10mM potassium phosphate,0.1mM EDTA,10mM DTT; primary sample buffer.",
+    "d2o_fraction": 1.0,
+    "denaturant": null
+  },
+  "state_assignment": {},
+  "checks": {
+    "quantitative_residues": 25,
+    "construct_residues": 94
+  },
+  "method": {
+    "method_id": "pfnet_hdxrate_0.2.3_poly_HD_v1",
+    "package": "hdxrate",
+    "package_version": "0.2.3",
+    "reference": "poly",
+    "exchange_type": "HD",
+    "ph_correction": true,
+    "d_percentage": 100.0,
+    "rate_output_units": "s-1",
+    "pD_used": 6.9,
+    "PF_formula": "kint_standard_s_inv / kex_s_inv",
+    "dG_formula": "R * temperature_K * ln(PF) / 1000",
+    "R_J_mol_K": 8.31446261815324,
+    "dG_interpretation": "HX opening/protection free energy under EX2 interpretation; not global unfolding free energy"
+  },
+  "experimental_details": {},
+  "structure": {
+    "pdb_id": "2KZS",
+    "origin": "experimental_solution_NMR",
+    "selected_model": 1,
+    "coordinate_file": "structure.pdb",
+    "coordinate_sha256": "e169536d3c3ce51c20dcab52f19ad36e10e07375be5bb09f18cd3817f35c32fc"
+  }
+}
